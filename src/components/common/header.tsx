@@ -16,8 +16,8 @@ export const Header: React.FC<Props> = ({ className }) => {
         <div className="flex items-center gap-4">
           <Image src="/next-pizza/logo.png" alt="Logo" width={35} height={35} />
           <div>
-            <h1 className="text-2xl uppercase font-black">Next Pizza</h1>
-            <p className="text-sm text-gray-400 leading-3">
+            <h1 className="text-2xl font-black uppercase">Next Pizza</h1>
+            <p className="text-sm leading-3 text-gray-400">
               Попробуй вкусную пиццу
             </p>
           </div>
@@ -31,7 +31,7 @@ export const Header: React.FC<Props> = ({ className }) => {
           <div>
             <Button className="group relative">
               <b>0 ₽</b>
-              <span className="h-full w-[1px] bg-white/30 mx-3" />
+              <span className="mx-3 h-full w-[1px] bg-white/30" />
 
               <div className="flex items-center gap-1 transition-opacity duration-300 group-hover:opacity-0">
                 <ShoppingCart size={16} strokeWidth={2} />
