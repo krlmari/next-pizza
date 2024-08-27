@@ -1,0 +1,23 @@
+import { cn } from "@/lib/utils";
+import React from "react";
+import { Categories, SortPopup, Container } from ".";
+
+interface TopBarProps {
+  className?: string;
+}
+
+export const TopBar: React.FC<TopBarProps> = ({ className }) => {
+  return (
+    <div
+      className={cn(
+        "shadow-ld sticky top-0 z-10 py-5 shadow-black/5",
+        className
+      )}
+    >
+      <Container className="flex justify-between">
+        <Categories />
+        <SortPopup />
+      </Container>
+    </div>
+  );
+};

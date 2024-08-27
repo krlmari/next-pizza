@@ -5,11 +5,11 @@ import { Container } from ".";
 import { Button } from "../ui";
 import { ArrowRight, ShoppingCart, User } from "lucide-react";
 
-interface Props {
+interface HeaderProps {
   className?: string;
 }
 
-export const Header: React.FC<Props> = ({ className }) => {
+export const Header: React.FC<HeaderProps> = ({ className }) => {
   return (
     <div className={cn("border-b", className)}>
       <Container className="flex flex-wrap items-center justify-between gap-4 py-8">
