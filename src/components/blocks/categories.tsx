@@ -19,7 +19,10 @@ interface CategoriesProps {
 export const Categories: React.FC<CategoriesProps> = ({ className }) => {
   return (
     <div
-      className={cn("inline-flex gap-1 rounded-2xl bg-gray-50 p-1", className)}
+      className={cn(
+        "inline-flex gap-1 overflow-auto rounded-2xl bg-gray-50 p-1",
+        className
+      )}
     >
       {categories.map((category, index) => (
         <a

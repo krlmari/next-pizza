@@ -14,7 +14,7 @@ export const TopBar: React.FC<TopBarProps> = ({ className }) => {
         className
       )}
     >
-      <Container className="flex justify-between">
+      <Container className="flex flex-wrap justify-between gap-4">
         <Categories />
         <SortPopup />
       </Container>
