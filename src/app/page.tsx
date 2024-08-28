@@ -15,7 +15,7 @@ export default function Home() {
             <Filters />
           </div>
 
-          <div className="flex-1">
+          <div className="flex-1 rounded-2xl bg-gray-50">
             <div className="flex flex-col gap-16"></div>
           </div>
         </div>
