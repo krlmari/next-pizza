@@ -47,7 +47,7 @@ export const CheckboxFilters: React.FC<CheckboxFiltersProps> = ({
         </div>
       )}
 
-      <div className="scrollbar flex max-h-96 flex-col gap-4 overflow-auto pr-2">
+      <div className="scrollbar flex max-h-80 flex-col gap-4 overflow-auto pr-2">
         {(showAll ? list : items.slice(0, limit)).map((item) => (
           <FilterCheckbox
             key={String(item.value)}
