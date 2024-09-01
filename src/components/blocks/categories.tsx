@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { cn } from "@/lib/utils";
 import useCategoryStore from "@/store/category";
 import { categories } from "@/content/categories";
@@ -11,21 +11,6 @@ interface CategoriesProps {
 
 export const Categories: React.FC<CategoriesProps> = ({ className }) => {
   const { currentCategory } = useCategoryStore();
-  const [activeCategory, setActiveCategory] = useState("pizza");
-
-  const OnClickCategory = (name: string) => {
-    const section = document.getElementById(name);
-
-    setActiveCategory(name);
-
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth", block: "center" });
-    }
-  };
-
-  useEffect(() => {
-    setActiveCategory(currentCategory);
-  }, [currentCategory]);
 
   return (
     <div
@@ -34,17 +19,17 @@ export const Categories: React.FC<CategoriesProps> = ({ className }) => {
         className
       )}
     >
-      {categories.map((category, index) => (
+      {categories.map(({ name, title }, index) => (
         <a
           className={cn(
             "flex h-11 cursor-pointer items-center rounded-2xl px-5",
-            activeCategory === category.name &&
+            currentCategory === name &&
               "bg-white text-primary shadow-md shadow-gray-200"
           )}
           key={index}
-          onClick={() => OnClickCategory(category.name)}
+          href={`/#${name}`}
         >
-          {category.title}
+          {title}
         </a>
       ))}
     </div>
