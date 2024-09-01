@@ -11,16 +11,14 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ className }) => {
   return (
-    <div className={cn("border-b", className)}>
+    <div className={cn("header border-b", className)}>
       <Container className="flex flex-wrap items-center justify-between gap-4 py-8">
         <div className="flex items-center gap-4">
           <Image src="/next-pizza/logo.png" alt="Logo" width={35} height={35} />
           {/* <Image src="/logo.png" alt="Logo" width={35} height={35} /> */}
           <div>
             <h1 className="text-2xl font-black uppercase">Next Pizza</h1>
-            <p className="text-sm leading-3 text-gray-400">
-              Попробуй вкусную пиццу
-            </p>
+            <p className="text-sm leading-3 text-gray-400">Пиццерия</p>
           </div>
         </div>
 
