@@ -20,7 +20,7 @@ export const Categories: React.FC<CategoriesProps> = ({ className }) => {
   return (
     <div
       className={cn(
-        "inline-flex gap-1 overflow-auto rounded-2xl bg-gray-50 p-1",
+        "categories inline-flex gap-1 overflow-auto rounded-2xl bg-gray-50 p-1",
         className
       )}
     >

@@ -34,7 +34,7 @@ export const Title: React.FC<TitleProps> = ({
 
   return React.createElement(
     mapTagBySize[size],
-    { className: clsx(mapClassNameBySize[size], className) },
+    { className: clsx(mapClassNameBySize[size], "title " + className) },
     text
   );
 };

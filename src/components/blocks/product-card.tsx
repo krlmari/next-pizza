@@ -24,7 +24,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   className,
 }) => {
   return (
-    <div className={cn("", className)}>
+    <div className={cn("product-card", className)}>
       <Link href="">
         <div className="relative flex h-[260px] justify-center rounded-lg bg-secondary p-6">
           <Image

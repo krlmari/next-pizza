@@ -34,7 +34,7 @@ export const CheckboxFilters: React.FC<CheckboxFiltersProps> = ({
   }, 300);
 
   return (
-    <div className={cn("", className)}>
+    <div className={cn("checkbox-filters", className)}>
       <p className="mb-3 font-bold">{title}</p>
 
       {showAll && (
