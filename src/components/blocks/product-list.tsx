@@ -5,7 +5,7 @@ import { useIntersection } from "react-use";
 import { cn } from "@/lib/utils";
 import { Title } from "./title";
 import { ProductCard } from "./product-card";
-import useStore from "@/store/zustand-store";
+import useCategoryStore from "@/store/category";
 
 interface ProductListProps {
   title: string;
@@ -22,7 +22,7 @@ export const ProductList: React.FC<ProductListProps> = ({
   categoryName,
   listClassName,
 }) => {
-  const { updateCategory } = useStore();
+  const { updateCategory } = useCategoryStore();
 
   const intersectionRef = useRef(null);
   const intersection = useIntersection(intersectionRef, {

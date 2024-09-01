@@ -5,7 +5,7 @@ import {
   Filters,
   ProductList,
 } from "@/components/blocks";
-import { products } from "../content/products";
+import { products } from "@/content/products";
 
 export default function Home() {
   return (

@@ -1,0 +1,16 @@
+export const filters = [
+  { text: "Ананасы", value: "15" },
+  { text: "Баварские колбаски", value: "9" },
+  { text: "Бекон", value: "10" },
+  { text: "Красный лук", value: "5" },
+  { text: "Митболы", value: "14" },
+  { text: "Моцарелла", value: "2" },
+  { text: "Пепперони", value: "3" },
+  { text: "Пряная говядина", value: "8" },
+  { text: "Сладкий перец", value: "12" },
+  { text: "Солённые огурцы", value: "4" },
+  { text: "Сыр чеддер", value: "11" },
+  { text: "Сырный соус", value: "1" },
+  { text: "Томаты", value: "6" },
+  { text: "Шампиньоны", value: "7" },
+];

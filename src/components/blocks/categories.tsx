@@ -2,45 +2,15 @@
 
 import React, { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
-import useStore from "@/store/zustand-store";
-
-const categories = [
-  {
-    title: "Пиццы",
-    name: "pizza",
-  },
-  {
-    title: "Комбо",
-    name: "combo",
-  },
-  {
-    title: "Закуски",
-    name: "snacks",
-  },
-  {
-    title: "Коктейли",
-    name: "cocktails",
-  },
-  {
-    title: "Кофе",
-    name: "coffee",
-  },
-  {
-    title: "Напитки",
-    name: "drinks",
-  },
-  {
-    title: "Десерты",
-    name: "desserts",
-  },
-];
+import useCategoryStore from "@/store/category";
+import { categories } from "@/content/categories";
 
 interface CategoriesProps {
   className?: string;
 }
 
 export const Categories: React.FC<CategoriesProps> = ({ className }) => {
-  const { currentCategory } = useStore();
+  const { currentCategory } = useCategoryStore();
   const [activeCategory, setActiveCategory] = useState("pizza");
 
   const OnClickCategory = (name: string) => {
