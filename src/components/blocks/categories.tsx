@@ -27,7 +27,8 @@ export const Categories: React.FC<CategoriesProps> = ({ className }) => {
               "bg-white text-primary shadow-md shadow-gray-200"
           )}
           key={index}
-          href={`/#${name}`}
+          href={`/next-pizza#${name}`}
+          // href={`/#${name}`}
         >
           {title}
         </a>
