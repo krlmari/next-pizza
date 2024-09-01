@@ -1,4 +1,90 @@
-import { Container, TopBar, Title, Filters } from "@/components/blocks";
+import {
+  Container,
+  TopBar,
+  Title,
+  Filters,
+  ProductList,
+} from "@/components/blocks";
+
+const products = [
+  {
+    title: "Пиццы",
+    items: [
+      {
+        id: 1,
+        title: "Сырный цыпленок",
+        description:
+          "Цыпленок, моцарелла, сыры чеддер и пармезан, сырный соус, томаты, фирменный соус альфредо, чеснок",
+        image: "/pizza.png",
+        price: 550,
+      },
+      {
+        id: 1,
+        title: "Сырный цыпленок",
+        description:
+          "Цыпленок, моцарелла, сыры чеддер и пармезан, сырный соус, томаты, фирменный соус альфредо, чеснок",
+        image: "/pizza.png",
+        price: 550,
+      },
+      {
+        id: 1,
+        title: "Сырный цыпленок",
+        description:
+          "Цыпленок, моцарелла, сыры чеддер и пармезан, сырный соус, томаты, фирменный соус альфредо, чеснок",
+        image: "/pizza.png",
+        price: 550,
+      },
+      {
+        id: 1,
+        title: "Сырный цыпленок",
+        description:
+          "Цыпленок, моцарелла, сыры чеддер и пармезан, сырный соус, томаты, фирменный соус альфредо, чеснок",
+        image: "/pizza.png",
+        price: 550,
+      },
+      {
+        id: 1,
+        title: "Сырный цыпленок",
+        description:
+          "Цыпленок, моцарелла, сыры чеддер и пармезан, сырный соус, томаты, фирменный соус альфредо, чеснок",
+        image: "/pizza.png",
+        price: 550,
+      },
+      {
+        id: 1,
+        title: "Сырный цыпленок",
+        description:
+          "Цыпленок, моцарелла, сыры чеддер и пармезан, сырный соус, томаты, фирменный соус альфредо, чеснок",
+        image: "/pizza.png",
+        price: 550,
+      },
+    ],
+  },
+  {
+    title: "Комбо",
+    items: [],
+  },
+  {
+    title: "Закуски",
+    items: [],
+  },
+  {
+    title: "Коктейли",
+    items: [],
+  },
+  {
+    title: "Кофе",
+    items: [],
+  },
+  {
+    title: "Напитки",
+    items: [],
+  },
+  {
+    title: "Десерты",
+    items: [],
+  },
+];
 
 export default function Home() {
   return (
@@ -15,8 +101,17 @@ export default function Home() {
             <Filters />
           </div>
 
-          <div className="flex-1 rounded-2xl bg-gray-50">
-            <div className="flex flex-col gap-16"></div>
+          <div className="flex-1">
+            <div className="flex flex-col gap-16">
+              {products.map((list, index) => (
+                <ProductList
+                  key={index}
+                  title={list.title}
+                  items={list.items}
+                  categoryName={""}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </Container>
