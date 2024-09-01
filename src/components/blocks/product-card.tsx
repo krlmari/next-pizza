@@ -31,7 +31,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             className="h-[215px] w-[215px]"
             fill
             src={`/next-pizza${image}`}
-            // src={image`}
+            // src={image}
             alt="Product image"
             style={{ objectFit: "contain" }}
             sizes="100%"
