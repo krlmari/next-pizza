@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import React from "react";
 import { Title, FilterCheckbox, CheckboxFilters } from ".";
-import { Input, RangeSlider } from "../ui";
+import { Button, Input, RangeSlider } from "../ui";
 
 const FILTERS = [
   { text: "Ананасы", value: "15" },
@@ -26,7 +26,7 @@ interface FiltersProps {
 
 export const Filters: React.FC<FiltersProps> = ({ className }) => {
   return (
-    <div className={cn("filters", className)}>
+    <div className={cn("filters sticky top-[100px]", className)}>
       <Title text="Фильтрация" size="sm" className="mb-8 font-bold" />
 
       <div className="flex flex-col gap-4">
@@ -55,6 +55,8 @@ export const Filters: React.FC<FiltersProps> = ({ className }) => {
         title="Ингредиенты:"
         items={FILTERS}
       />
+
+      <Button className="mt-5 w-[100%]">Применить</Button>
     </div>
   );
 };

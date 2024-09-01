@@ -24,15 +24,17 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   className,
 }) => {
   return (
-    <div className={cn("product-card", className)}>
+    <div className={cn("product-card", className)} id={`${id}`}>
       <Link href="">
         <div className="relative flex h-[260px] justify-center rounded-lg bg-secondary p-6">
           <Image
             className="h-[215px] w-[215px]"
             fill
-            src={image}
-            alt=""
-            objectFit="contain"
+            src={`/next-pizza${image}`}
+            // src={image`}
+            alt="Product image"
+            style={{ objectFit: "contain" }}
+            sizes="100%"
           />
         </div>
 

@@ -5,86 +5,7 @@ import {
   Filters,
   ProductList,
 } from "@/components/blocks";
-
-const products = [
-  {
-    title: "Пиццы",
-    items: [
-      {
-        id: 1,
-        title: "Сырный цыпленок",
-        description:
-          "Цыпленок, моцарелла, сыры чеддер и пармезан, сырный соус, томаты, фирменный соус альфредо, чеснок",
-        image: "/pizza.png",
-        price: 550,
-      },
-      {
-        id: 1,
-        title: "Сырный цыпленок",
-        description:
-          "Цыпленок, моцарелла, сыры чеддер и пармезан, сырный соус, томаты, фирменный соус альфредо, чеснок",
-        image: "/pizza.png",
-        price: 550,
-      },
-      {
-        id: 1,
-        title: "Сырный цыпленок",
-        description:
-          "Цыпленок, моцарелла, сыры чеддер и пармезан, сырный соус, томаты, фирменный соус альфредо, чеснок",
-        image: "/pizza.png",
-        price: 550,
-      },
-      {
-        id: 1,
-        title: "Сырный цыпленок",
-        description:
-          "Цыпленок, моцарелла, сыры чеддер и пармезан, сырный соус, томаты, фирменный соус альфредо, чеснок",
-        image: "/pizza.png",
-        price: 550,
-      },
-      {
-        id: 1,
-        title: "Сырный цыпленок",
-        description:
-          "Цыпленок, моцарелла, сыры чеддер и пармезан, сырный соус, томаты, фирменный соус альфредо, чеснок",
-        image: "/pizza.png",
-        price: 550,
-      },
-      {
-        id: 1,
-        title: "Сырный цыпленок",
-        description:
-          "Цыпленок, моцарелла, сыры чеддер и пармезан, сырный соус, томаты, фирменный соус альфредо, чеснок",
-        image: "/pizza.png",
-        price: 550,
-      },
-    ],
-  },
-  {
-    title: "Комбо",
-    items: [],
-  },
-  {
-    title: "Закуски",
-    items: [],
-  },
-  {
-    title: "Коктейли",
-    items: [],
-  },
-  {
-    title: "Кофе",
-    items: [],
-  },
-  {
-    title: "Напитки",
-    items: [],
-  },
-  {
-    title: "Десерты",
-    items: [],
-  },
-];
+import { products } from "../content/products";
 
 export default function Home() {
   return (
@@ -108,7 +29,7 @@ export default function Home() {
                   key={index}
                   title={list.title}
                   items={list.items}
-                  categoryName={""}
+                  categoryName={list.category}
                 />
               ))}
             </div>
