@@ -10,7 +10,12 @@ interface FiltersProps {
 
 export const Filters: React.FC<FiltersProps> = ({ className }) => {
   return (
-    <div className={cn("filters", className)}>
+    <div
+      className={cn(
+        "filters xl:scrollbar-none xl:sticky xl:top-[100px] xl:max-h-[720px] xl:overflow-auto xl:pb-[40px]",
+        className
+      )}
+    >
       <Title text="Фильтрация" size="sm" className="mb-8 font-bold" />
 
       <div className="flex flex-col gap-4">

@@ -17,8 +17,8 @@ export default function Home() {
       <TopBar />
 
       <Container className="mt-9 pb-14">
-        <div className="flex flex-col gap-[80px] md:flex-row">
-          <div className="w-auto md:w-[250px]">
+        <div className="flex flex-col gap-[80px] xl:flex-row">
+          <div className="w-auto xl:w-[250px]">
             <Filters />
           </div>
 
