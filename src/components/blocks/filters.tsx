@@ -10,7 +10,7 @@ interface FiltersProps {
 
 export const Filters: React.FC<FiltersProps> = ({ className }) => {
   return (
-    <div className={cn("filters sticky top-[100px]", className)}>
+    <div className={cn("filters", className)}>
       <Title text="Фильтрация" size="sm" className="mb-8 font-bold" />
 
       <div className="flex flex-col gap-4">
