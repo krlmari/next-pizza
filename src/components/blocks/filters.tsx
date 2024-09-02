@@ -12,7 +12,7 @@ export const Filters: React.FC<FiltersProps> = ({ className }) => {
   return (
     <div
       className={cn(
-        "filters xl:scrollbar-none xl:sticky xl:top-[100px] xl:max-h-[720px] xl:overflow-auto xl:pb-[40px]",
+        "filters xl:scrollbar-none overflow-hidden xl:sticky xl:top-[100px] xl:max-h-[720px] xl:overflow-y-auto xl:pb-[40px]",
         className
       )}
     >
@@ -25,7 +25,7 @@ export const Filters: React.FC<FiltersProps> = ({ className }) => {
 
       <div className="mt-5 border-y border-y-neutral-100 pb-7 pt-6">
         <p className="mb-3 font-bold">Цена от и до:</p>
-        <div className="mb-5 flex gap-3">
+        <div className="mb-5 ml-auto mr-auto flex max-w-[90%] gap-3">
           <Input
             type="number"
             placeholder="0"
