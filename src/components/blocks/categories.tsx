@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { cn } from "@/lib/utils";
 import useCategoryStore from "@/store/category";
 import { categories } from "@/content/categories";
@@ -11,6 +11,30 @@ interface CategoriesProps {
 
 export const Categories: React.FC<CategoriesProps> = ({ className }) => {
   const { currentCategory } = useCategoryStore();
+
+  const scrollToElement = (name: string, offset = 100) => {
+    const targetElement = document.getElementById(name);
+    if (!targetElement) return;
+
+    window.scrollTo({
+      top: targetElement.getBoundingClientRect().top + window.scrollY - offset,
+      behavior: "smooth",
+    });
+  };
+
+  const handleClick = (
+    event: React.MouseEvent<HTMLAnchorElement>,
+    name: string
+  ) => {
+    event.preventDefault();
+    scrollToElement(name);
+    window.history.pushState(null, "", `#${name}`);
+  };
+
+  useEffect(() => {
+    const hash = window.location.hash.substring(1);
+    if (hash) scrollToElement(hash);
+  }, []);
 
   return (
     <div
@@ -27,8 +51,7 @@ export const Categories: React.FC<CategoriesProps> = ({ className }) => {
               "bg-white text-primary shadow-md shadow-gray-200"
           )}
           key={index}
-          href={`/next-pizza#${name}`}
-          // href={`/#${name}`}
+          onClick={(event) => handleClick(event, name)}
         >
           {title}
         </a>
