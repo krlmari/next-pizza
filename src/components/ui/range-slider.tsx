@@ -53,7 +53,7 @@ const RangeSlider = React.forwardRef(
         value={localValues}
         onValueChange={handleValueChange}
         className={cn(
-          "relative mb-6 flex w-full touch-none select-none items-center",
+          "relative m-auto mb-6 flex w-full max-w-[90%] touch-none select-none items-center",
           className
         )}
         {...props}
@@ -66,7 +66,7 @@ const RangeSlider = React.forwardRef(
             <div
               className="absolute text-center"
               style={{
-                left: `calc(${((value - min) / (max - min)) * 100}% + 0px)`,
+                left: `calc(${((value - min) / (max - min)) * 100}% - 4.5px)`,
                 top: `10px`,
               }}
             >
