@@ -25,7 +25,7 @@ export const Filters: React.FC<FiltersProps> = ({ className }) => {
 
       <div className="mt-5 border-y border-y-neutral-100 pb-7 pt-6">
         <p className="mb-3 font-bold">Цена от и до:</p>
-        <div className="mb-5 ml-auto mr-auto flex max-w-[90%] gap-3">
+        <div className="mb-5 ml-auto mr-auto flex max-w-[78%] gap-2">
           <Input
             type="number"
             placeholder="0"

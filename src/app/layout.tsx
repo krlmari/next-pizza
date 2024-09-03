@@ -10,8 +10,8 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "Next Pizza | Главная",
-  description: "Next Pizza",
+  title: "Pizza | Главная",
+  description: "Pizza",
 };
 
 export default function RootLayout({

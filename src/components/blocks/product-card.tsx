@@ -12,6 +12,7 @@ interface ProductCardProps {
   description: string;
   price: number;
   image: string;
+  categoryName: string;
   className?: string;
 }
 
@@ -21,10 +22,15 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   description,
   price,
   image,
+  categoryName,
   className,
 }) => {
   return (
-    <div className={cn("product-card", className)} id={`${id}`}>
+    <div
+      className={cn("product-card", className)}
+      id={`${id}`}
+      category-name={categoryName}
+    >
       <Link href="">
         <div className="relative flex h-[260px] justify-center rounded-lg bg-secondary p-6">
           <Image

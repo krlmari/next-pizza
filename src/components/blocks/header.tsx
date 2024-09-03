@@ -17,7 +17,7 @@ export const Header: React.FC<HeaderProps> = ({ className }) => {
           <Image src="/next-pizza/logo.png" alt="Logo" width={35} height={35} />
           {/* <Image src="/logo.png" alt="Logo" width={35} height={35} /> */}
           <div>
-            <h1 className="text-2xl font-black uppercase">Next Pizza</h1>
+            <h1 className="text-2xl font-black uppercase">Pizza</h1>
             <p className="text-sm leading-3 text-gray-400">Пиццерия</p>
           </div>
         </div>

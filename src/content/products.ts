@@ -9,6 +9,7 @@ export const products = [
         description:
           "Цыпленок, моцарелла, сыры чеддер и пармезан, сырный соус, томаты, фирменный соус альфредо, чеснок",
         image: "/pizza.png",
+        categoryName: "pizza",
         price: 550,
       },
       {
@@ -17,6 +18,7 @@ export const products = [
         description:
           "Цыпленок, моцарелла, сыры чеддер и пармезан, сырный соус, томаты, фирменный соус альфредо, чеснок",
         image: "/pizza.png",
+        categoryName: "pizza",
         price: 550,
       },
       {
@@ -25,6 +27,7 @@ export const products = [
         description:
           "Цыпленок, моцарелла, сыры чеддер и пармезан, сырный соус, томаты, фирменный соус альфредо, чеснок",
         image: "/pizza.png",
+        categoryName: "pizza",
         price: 550,
       },
     ],
@@ -39,6 +42,7 @@ export const products = [
         description:
           "Если хочется всего понемногу. Маленькая пицца, закуска, напиток и соус. Цена комбо зависит от выбранных продуктов и может быть увеличена",
         image: "/combo.png",
+        categoryName: "combo",
         price: 550,
       },
       {
@@ -47,6 +51,7 @@ export const products = [
         description:
           "Если хочется всего понемногу. Маленькая пицца, закуска, напиток и соус. Цена комбо зависит от выбранных продуктов и может быть увеличена",
         image: "/combo.png",
+        categoryName: "combo",
         price: 550,
       },
       {
@@ -55,6 +60,7 @@ export const products = [
         description:
           "Если хочется всего понемногу. Маленькая пицца, закуска, напиток и соус. Цена комбо зависит от выбранных продуктов и может быть увеличена",
         image: "/combo.png",
+        categoryName: "combo",
         price: 550,
       },
     ],
@@ -69,6 +75,7 @@ export const products = [
         description:
           "Горячий сытный обед из куриных крылышек со специями и ароматом копчения, пряного картофеля из печи и соуса барбекю",
         image: "/snacks.png",
+        categoryName: "snacks",
         price: 550,
       },
       {
@@ -77,6 +84,7 @@ export const products = [
         description:
           "Горячий сытный обед из куриных крылышек со специями и ароматом копчения, пряного картофеля из печи и соуса барбекю",
         image: "/snacks.png",
+        categoryName: "snacks",
         price: 550,
       },
       {
@@ -85,6 +93,7 @@ export const products = [
         description:
           "Горячий сытный обед из куриных крылышек со специями и ароматом копчения, пряного картофеля из печи и соуса барбекю",
         image: "/snacks.png",
+        categoryName: "snacks",
         price: 550,
       },
     ],
@@ -99,6 +108,7 @@ export const products = [
         description:
           "Не важно, какое время года на улице, этот коктейль с клубничным концентратом вернет вас в лето с одного глотка",
         image: "/cocktails.png",
+        categoryName: "cocktails",
         price: 235,
       },
       {
@@ -107,6 +117,7 @@ export const products = [
         description:
           "Не важно, какое время года на улице, этот коктейль с клубничным концентратом вернет вас в лето с одного глотка",
         image: "/cocktails.png",
+        categoryName: "cocktails",
         price: 235,
       },
       {
@@ -115,6 +126,7 @@ export const products = [
         description:
           "Не важно, какое время года на улице, этот коктейль с клубничным концентратом вернет вас в лето с одного глотка",
         image: "/cocktails.png",
+        categoryName: "cocktails",
         price: 235,
       },
     ],
@@ -129,6 +141,7 @@ export const products = [
         description:
           "Если не шоколад, то карамель! А капучино с карамельным сиропом особенно хорош",
         image: "/coffee.png",
+        categoryName: "coffee",
         price: 169,
       },
       {
@@ -137,6 +150,7 @@ export const products = [
         description:
           "Если не шоколад, то карамель! А капучино с карамельным сиропом особенно хорош",
         image: "/coffee.png",
+        categoryName: "coffee",
         price: 169,
       },
       {
@@ -145,6 +159,7 @@ export const products = [
         description:
           "Если не шоколад, то карамель! А капучино с карамельным сиропом особенно хорош",
         image: "/coffee.png",
+        categoryName: "coffee",
         price: 169,
       },
     ],
@@ -159,6 +174,7 @@ export const products = [
         description:
           "Для усиления ощущений от морса рекомендуем закрыть глаза и представить себя у бабушки в саду. Дизайн товара может отличаться",
         image: "/drinks.png",
+        categoryName: "drinks",
         price: 145,
       },
       {
@@ -167,6 +183,7 @@ export const products = [
         description:
           "Для усиления ощущений от морса рекомендуем закрыть глаза и представить себя у бабушки в саду. Дизайн товара может отличаться",
         image: "/drinks.png",
+        categoryName: "drinks",
         price: 145,
       },
       {
@@ -175,6 +192,7 @@ export const products = [
         description:
           "Для усиления ощущений от морса рекомендуем закрыть глаза и представить себя у бабушки в саду. Дизайн товара может отличаться",
         image: "/drinks.png",
+        categoryName: "drinks",
         price: 145,
       },
     ],
@@ -189,6 +207,7 @@ export const products = [
         description:
           "Мы перепробовали тысячу десертов и наконец нашли любимца гостей — нежнейший творожный чизкейк",
         image: "/desserts.png",
+        categoryName: "desserts",
         price: 550,
       },
       {
@@ -197,6 +216,7 @@ export const products = [
         description:
           "Мы перепробовали тысячу десертов и наконец нашли любимца гостей — нежнейший творожный чизкейк",
         image: "/desserts.png",
+        categoryName: "desserts",
         price: 550,
       },
       {
@@ -205,6 +225,7 @@ export const products = [
         description:
           "Мы перепробовали тысячу десертов и наконец нашли любимца гостей — нежнейший творожный чизкейк",
         image: "/desserts.png",
+        categoryName: "desserts",
         price: 550,
       },
     ],
