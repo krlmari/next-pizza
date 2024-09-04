@@ -6,15 +6,22 @@ import {
   ProductList,
 } from "@/components/blocks";
 import { products } from "@/content/products";
+import { GET as GetCategories } from "@/app/api/categories/route";
 
-export default function Home() {
+export default async function Home() {
+  const resCategories = await GetCategories();
+  const categories = (await resCategories.json()) as {
+    name: string;
+    title: string;
+  }[];
+
   return (
     <>
       <Container className="mt-10">
         <Title text="Все пиццы" size="lg" className="font-extrabold" />
       </Container>
 
-      <TopBar />
+      <TopBar categories={categories} />
 
       <Container className="mt-9 pb-14">
         <div className="flex flex-col gap-[80px] xl:flex-row">

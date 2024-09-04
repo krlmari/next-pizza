@@ -3,10 +3,11 @@ import { cn } from "@/lib/utils";
 import { Categories, SortPopup, Container } from ".";
 
 interface TopBarProps {
+  categories: { name: string; title: string }[];
   className?: string;
 }
 
-export const TopBar: React.FC<TopBarProps> = ({ className }) => {
+export const TopBar: React.FC<TopBarProps> = ({ categories, className }) => {
   return (
     <div
       className={cn(
@@ -15,7 +16,7 @@ export const TopBar: React.FC<TopBarProps> = ({ className }) => {
       )}
     >
       <Container className="flex flex-wrap justify-between gap-4">
-        <Categories />
+        <Categories categories={categories} />
         <SortPopup />
       </Container>
     </div>

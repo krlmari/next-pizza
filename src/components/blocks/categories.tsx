@@ -3,13 +3,16 @@
 import React, { useEffect } from "react";
 import { cn } from "@/lib/utils";
 import useCategoryStore from "@/store/category";
-import { categories } from "@/content/categories";
 
 interface CategoriesProps {
+  categories: { name: string; title: string }[];
   className?: string;
 }
 
-export const Categories: React.FC<CategoriesProps> = ({ className }) => {
+export const Categories: React.FC<CategoriesProps> = ({
+  categories,
+  className,
+}) => {
   const { currentCategory } = useCategoryStore();
 
   const scrollToElement = (name: string, offset = 100) => {
