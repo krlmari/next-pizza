@@ -1,3 +1,4 @@
+import { GET } from "@/app/api/categories/route";
 import type { InferGetStaticPropsType, GetStaticProps } from "next";
 
 type Repo = {
@@ -6,15 +7,15 @@ type Repo = {
 };
 
 export const getStaticProps = (async (context) => {
-  const res = await fetch("https://api.github.com/repos/vercel/next.js");
+  const res = await GET();
   const repo = await res.json();
   return { props: { repo } };
 }) satisfies GetStaticProps<{
-  repo: Repo;
+  repo: any[];
 }>;
 
 export default function Page({
   repo,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
-  return repo.stargazers_count;
+  return repo.map((r: { title: string }) => r.title).join(", ");
 }
