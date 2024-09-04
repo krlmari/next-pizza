@@ -1,21 +1,19 @@
 import { GET } from "@/app/api/categories/route";
 import type { InferGetStaticPropsType, GetStaticProps } from "next";
 
-type Repo = {
-  name: string;
-  stargazers_count: number;
-};
-
-export const getStaticProps = (async (context) => {
+export const getStaticProps = (async () => {
   const res = await GET();
-  const repo = await res.json();
-  return { props: { repo } };
+  const categories = await res.json();
+
+  return { props: { categories } };
 }) satisfies GetStaticProps<{
-  repo: any[];
+  categories: any[];
 }>;
 
 export default function Page({
-  repo,
+  categories,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
-  return repo.map((r: { title: string }) => r.title).join(", ");
+  return categories
+    .map((category: { title: string }) => category.title)
+    .join(", ");
 }
