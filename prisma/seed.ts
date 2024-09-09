@@ -2,9 +2,9 @@ import { PrismaClient } from "@prisma/client";
 
 import { generateProductItem } from "./utils";
 
-import { CATEGORIES, INGREDIENTS, PRODUCTS, PIZZA } from "./data/content";
-import { USERS } from "./data/users";
-import { CARTS } from "./data/carts";
+import { CATEGORIES, INGREDIENTS, PRODUCTS, PIZZA } from "./testData/content";
+import { USERS } from "./testData/users";
+import { CARTS } from "./testData/carts";
 
 const prisma = new PrismaClient();
 
