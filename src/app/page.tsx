@@ -5,8 +5,11 @@ import {
   Filters,
   ProductList,
 } from "@/components/blocks";
+
 import { products } from "@/content/products";
+
 import { GET as GetCategories } from "@/app/api/categories/route";
+// import { GET as GetProducts } from "@/app/api/products/route";
 
 export default async function Home() {
   const resCategories = await GetCategories();
@@ -14,6 +17,8 @@ export default async function Home() {
     name: string;
     title: string;
   }[];
+
+  // const resProducts = await GetProducts();
 
   return (
     <>
